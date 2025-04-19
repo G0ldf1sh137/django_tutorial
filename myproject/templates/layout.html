@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+{% load static tailwind_tags %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
         {% endblock %}
     </title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% tailwind_css %}
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
 <body>
