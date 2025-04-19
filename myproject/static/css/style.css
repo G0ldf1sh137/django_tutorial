@@ -1,4 +1,7 @@
-* {
+@import "tailwindcss";
+@source "../../../**/*.{html,py,js}";
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -93,7 +96,7 @@ a:hover {
 
 .errorlist li::marker {
     content: '🚨 ';
-}
+} 
 
 
 .logout {
@@ -108,4 +111,4 @@ a:hover {
 
 .logout-button:hover {
     opacity: .85;
-}
+} */

@@ -1,16 +1,16 @@
-<nav>
+<nav class="bg-green-700 p-2">
     <a href="/">
-        <span role="img" aria-label="Home" title="Home">🏠</span>
+        <span class="text-6xl" role="img" aria-label="Home" title="Home">🏠</span>
     </a> | 
     <a href="/about">
-        <span role="img" aria-label="About" title="About">😀</span>
+        <span class="text-6xl" role="img" aria-label="About" title="About">😀</span>
     </a> | 
     <a href="{% url 'posts:list' %}">
-        <span role="img" aria-label="Posts" title="Posts">📰</span>
+        <span class="text-6xl" role="img" aria-label="Posts" title="Posts">📰</span>
     </a> | 
     {% if user.is_authenticated %}
         <a href="{% url 'posts:new-post' %}">
-            <span role="img" aria-label="New Post" title="New Post">🆕</span>
+            <span class="text-6xl" role="img" aria-label="New Post" title="New Post">🆕</span>
         </a> | 
         <form class="logout" action="{% url 'users:logout' %}" method="post">
             {% csrf_token %} 
@@ -18,10 +18,10 @@
         </form>
     {% else %}
         <a href="{% url 'users:register' %}">
-            <span role="img" aria-label="User Registration" title="User Registration">🚀</span>
+            <span class="text-6xl" role="img" aria-label="User Registration" title="User Registration">🚀</span>
         </a> | 
         <a href="{% url 'users:login' %}">
-            <span role="img" aria-label="User Login" title="User Login">🔏</span>
+            <span class="text-6xl" role="img" aria-label="User Login" title="User Login">🔏</span>
         </a>
     {% endif %}
 </nav>
