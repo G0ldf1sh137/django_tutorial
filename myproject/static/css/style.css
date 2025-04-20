@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@source "../../../**/*.{html,py,js}";
+@source "../../**/*.{html,py,js}";
 
 /* * {
     margin: 0;

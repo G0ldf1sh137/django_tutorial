@@ -12,6 +12,12 @@
         <th class="border p-4">Assigned To</th>
         <th class="border p-4">Completed</th>
     </tr>
+
+    {% for chore in chores %}
+        <tr>
+            <td>{{chore.title}}</td>
+        </tr>
+    {% endfor %}
 </table>
 
 {% endblock content %}
